@@ -19,6 +19,9 @@ tokio-openssl = "0.1.3"
 tokio-service = "0.1.0"
 futures = "0.1.14"
 
+[dev-dependencies]
+rustls = "0.9"
+
 [[example]]
 name = "bench"
 path = "examples/bench.rs"
