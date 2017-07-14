@@ -107,6 +107,7 @@ impl Inner {
         }
 
         let f = if self.disable_verification {
+            println!("shake hands with danger");
             conf.danger_connect_without_providing_domain_for_certificate_verification_and_server_name_indication_async(stream)
         } else {
             conf.connect_async(host, stream)
